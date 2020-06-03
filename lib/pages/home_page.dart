@@ -68,11 +68,11 @@ class _HomePageState extends State<HomePage> {
             ],
           ),
           Padding(
-            padding: EdgeInsets.only(top: 40.0),
+            padding: EdgeInsets.only(top: 60.0),
             child: Column(
               children: <Widget>[
                 Padding(
-                    padding: EdgeInsets.only(bottom: 20.0),
+                    padding: EdgeInsets.only(bottom: 25.0),
                     child: Container(
                       height: 50.0,
                       width: 270.0,
@@ -91,7 +91,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                     )),
                 Padding(
-                    padding: EdgeInsets.only(bottom: 20.0),
+                    padding: EdgeInsets.only(bottom: 25.0),
                     child: Container(
                       height: 50.0,
                       width: 270.0,
@@ -110,7 +110,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                     )),
                 Padding(
-                    padding: EdgeInsets.only(bottom: 20.0),
+                    padding: EdgeInsets.only(bottom: 25.0),
                     child: Container(
                       height: 50.0,
                       width: 270.0,
