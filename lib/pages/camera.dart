@@ -48,8 +48,7 @@ class _CameraState extends State<Camera> {
           ),
           Container(
             margin: EdgeInsets.only(top: 15.0),
-            child:
-                _image == null ? Text('No image selected') : Image.file(_image),
+            child: _image == null ? null : Image.file(_image),
             height: 400.0,
             width: 320.0,
           )
