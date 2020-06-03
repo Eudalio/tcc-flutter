@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'package:tcc_flutter/pages/localizacao.dart';
+import 'package:tcc_flutter/pages/camera.dart';
+import 'package:tcc_flutter/pages/profile.dart';
+
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
@@ -73,7 +77,12 @@ class _HomePageState extends State<HomePage> {
                       height: 50.0,
                       width: 270.0,
                       child: RaisedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Profile()));
+                        },
                         child: Text(
                           "Consultar API - GitHub",
                           style: TextStyle(color: Colors.white, fontSize: 18.0),
@@ -87,7 +96,12 @@ class _HomePageState extends State<HomePage> {
                       height: 50.0,
                       width: 270.0,
                       child: RaisedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Camera()));
+                        },
                         child: Text(
                           "Tirar uma foto",
                           style: TextStyle(color: Colors.white, fontSize: 18.0),
@@ -101,7 +115,12 @@ class _HomePageState extends State<HomePage> {
                       height: 50.0,
                       width: 270.0,
                       child: RaisedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Localizacao()));
+                        },
                         child: Text(
                           "Localização",
                           style: TextStyle(color: Colors.white, fontSize: 18.0),
